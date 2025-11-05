@@ -1,17 +1,21 @@
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram, Heart } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="py-12 px-4 border-t border-border">
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          {/* Left: Copyright */}
+          {/* Left: Developer Credit */}
           <div className="text-center md:text-left">
             <p className="text-muted-foreground">
-              © {currentYear} Portfolio. All rights reserved.
+              Designed and Developed by Yelesam Sreenu
             </p>
+          </div>
+
+          {/* Middle: Made with Love */}
+          <div className="flex items-center gap-2 text-muted-foreground">
+            <span>Made with</span>
+            <Heart className="h-4 w-4 fill-primary text-primary animate-pulse" />
           </div>
 
           {/* Right: Social Links */}
