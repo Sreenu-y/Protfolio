@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Download, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted!");
-    // TODO: integrate EmailJS or backend API
+  const handleDownloadResume = () => {
+    // This will trigger a download - you'll need to add your actual resume file to public folder
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Add your resume.pdf to the public folder
+    link.download = 'Srinu_Yelesam_Resume.pdf';
+    link.click();
   };
 
   return (
@@ -19,7 +19,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground">
-            Let's discuss your next project
+            Let's connect and discuss opportunities
           </p>
         </div>
 
@@ -79,42 +79,60 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <Card className="bg-card border-border transition-transform hover:scale-[1.01]">
-            <CardContent className="p-8">
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">
-                    Name <span className="text-destructive">*</span>
-                  </label>
-                  <Input id="name" placeholder="Your name" aria-label="Your name" required />
+          {/* Resume Download & Social Links */}
+          <div className="space-y-6">
+            <Card className="bg-card border-border">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center space-y-4">
+                  <h3 className="font-display text-2xl font-semibold">
+                    Download Resume
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Get a copy of my resume to learn more about my experience and skills
+                  </p>
+                  <Button 
+                    onClick={handleDownloadResume}
+                    className="w-full"
+                    size="lg"
+                  >
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Resume
+                  </Button>
                 </div>
 
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email <span className="text-destructive">*</span>
-                  </label>
-                  <Input id="email" type="email" placeholder="your@email.com" aria-label="Your email" required />
+                <div className="pt-6 border-t border-border">
+                  <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
+                  <div className="flex justify-center gap-4">
+                    <a
+                      href="https://linkedin.com/in/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin className="h-5 w-5 text-primary" />
+                    </a>
+                    <a
+                      href="https://github.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <Github className="h-5 w-5 text-primary" />
+                    </a>
+                    <a
+                      href="mailto:srinuyelesam@gmail.com"
+                      className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      aria-label="Email"
+                    >
+                      <Mail className="h-5 w-5 text-primary" />
+                    </a>
+                  </div>
                 </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell me about your project..."
-                    className="min-h-[150px]"
-                    aria-label="Your message"
-                  />
-                </div>
-
-                <Button type="submit" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
