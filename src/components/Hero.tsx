@@ -20,14 +20,14 @@ const Hero = () => {
       <div className="container relative z-10 px-4 py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight">
-            Creative Developer &
-            <span className="block bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent">
-              Digital Designer
+            Web Developer
+            <span className="block bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
+              MERN Stack & DSA
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Crafting exceptional digital experiences through innovative design and clean code
+            Building full-stack web applications with MongoDB, Express, React, and Node.js. Strong foundation in Data Structures & Algorithms with Java.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
