@@ -15,15 +15,15 @@ const Projects = () => {
       description: "A comprehensive learning platform where instructors can sell courses and students can purchase and learn from a wide variety of educational content.",
       image: project1,
       tags: ["React", "Node.js", "MongoDB", "Express"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Sreenu-y/Learnify",
+      live: "https://learnify-neon-eight.vercel.app/"
     },
     {
       title: "Job-Hunt",
       description: "Professional job portal connecting employers and job seekers. Post job openings or apply to opportunities that match your skills.",
       image: project2,
       tags: ["MERN Stack", "Redux", "JWT", "REST API"],
-      github: "#",
+      github: "https://github.com/Sreenu-y/JobHunt",
       live: "#"
     }
   ];
