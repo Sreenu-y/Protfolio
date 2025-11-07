@@ -19,6 +19,18 @@ const Hero = () => {
       
       <div className="container relative z-10 px-4 py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="space-y-4">
+            <p className="text-2xl md:text-3xl text-muted-foreground flex items-center justify-center gap-2">
+              Hi there 
+              <span className="inline-block animate-[wave_1s_ease-in-out_infinite] origin-[70%_70%]">
+                👋🏻
+              </span>
+            </p>
+            <p className="text-3xl md:text-4xl font-semibold">
+              I'm Yelesam Sreenu
+            </p>
+          </div>
+          
           <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight">
             Web Developer
             <span className="block bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
