@@ -11,7 +11,7 @@ const Footer = () => {
               Designed and Developed by Yelesam Sreenu
             </p>
           </div>
-
+{/*  */}
           {/* Middle: Made with Love */}
           <div className="flex items-center gap-2 text-muted-foreground">
             <span>Made with</span>

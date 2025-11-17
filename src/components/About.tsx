@@ -19,6 +19,7 @@ const About = () => {
       description: "Optimizing every detail for lightning-fast user experiences"
     }
   ];
+  // 
 
   return (
     <section id="about" className="py-24 px-4">

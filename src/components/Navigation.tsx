@@ -18,6 +18,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="font-display text-xl font-bold">
             Portfolio
+            {/*  */}
           </Link>
           
           <div className="flex gap-1">

@@ -7,6 +7,7 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
 const Projects = () => {
+  // 
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
   const projects = [

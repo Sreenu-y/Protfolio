@@ -11,6 +11,7 @@ const Contact = () => {
   };
 
   return (
+    // 
     <section id="contact" className="py-24 px-4 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
         {/* Header */}
